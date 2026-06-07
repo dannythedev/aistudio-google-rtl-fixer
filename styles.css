@@ -1,0 +1,6 @@
+/* Force all code blocks and their contents to remain LTR islands */
+pre, code, pre *, code * {
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: isolate !important;
+}

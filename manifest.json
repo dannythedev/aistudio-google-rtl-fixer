@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AI Studio Local RTL Fixer",
+  "version": "1.0",
+  "description": "Locally forces RTL support for RTL languages on Google AI Studio, respecting code blocks and LTR rows.",
+  "author": "dannythedev on github",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://aistudio.google.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
