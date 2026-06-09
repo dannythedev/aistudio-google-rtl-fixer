@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://aistudio.google.com/*"],
+      "matches": ["*://aistudio.google.com/*", "*://github.com/*"],
       "css": ["styles.css"],
       "js": ["content.js"]
     }
